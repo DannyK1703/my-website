@@ -24,5 +24,26 @@ class imk extends CI_Model
     }
     public function publier($data){
         $this->db->insert($this->pub, $data);
+        $this->db->where($data);
+        $a=$this->db->get($this->pub);
+        $ste=$a->result();
+        return $ste; 
     }
+    public function img($fil,$a){
+        $this->db->set('name',$fil);
+        $this->db->where('titre',$a);
+        $this->db->update($this->pub);
+	}
+	public function commenter($data)
+	{
+		$this->db->insert($this->comm,$data);
+		return $this->db->get($this->comm)->result();
+	}
+	public function realisation(){
+		return $this->db->get($this->pub)->result();
+	}
+	public function supp($d){
+		$this->db->where($d);
+		$this->db->delete($this->pub);
+	}
 }

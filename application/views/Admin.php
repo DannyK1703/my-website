@@ -8,12 +8,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>health Peoximity Dashboard</title>
-
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url('asset/css/font-awesome.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('Assets/css/font-awesome.min.css');?>">
 
     <!-- Material Design Bootstrap -->
-    <link href="<?php echo base_url('asset/css/mdb.css');?>" rel="stylesheet">
+	<link href="<?php echo base_url('Assets/css/mdb.css');?>" rel="stylesheet">
+	<link href="<?php echo base_url('Assets/css/style.css');?>" rel="stylesheet">
 
 </head>
 
@@ -46,7 +47,7 @@
                                
                                 <input type="text" name="login" placeholder="login" value="<?php echo set_value('login')?>" id="form3" class="form-control" required/>
                                 <?php echo form_error('login','<em>','</em>') ?>
-                                <label for="form3">Username ou login</label>
+                                <!-- <label for="form3">Username ou login</label> -->
                             </div>
                            
                             <div class="md-form">
@@ -55,7 +56,7 @@
                             <?php echo form_error('mdp','<em>','</em>') ?>
                            
 
-                            <label for="form2">Mot de passe</label>
+                            <!-- <label for="form2">Mot de passe</label> -->
                         </div>
                     
                             <div class="text-xs-center ">
@@ -97,13 +98,13 @@
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
-    <script type="text/javascript" src="<?php echo base_url('asset/js/jquery-3.1.1.min.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('Assets/js/jquery-3.1.1.min.js')?>"></script>
 
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="<?php echo base_url('asset/js/tether.min.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('Assets/js/tether.min.js')?>"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="<?php echo base_url('asset/js/mdb.js')?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('Assets/js/mdb.js')?>"></script>
 
     <script>
         // SideNav init

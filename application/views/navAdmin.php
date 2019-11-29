@@ -8,7 +8,7 @@
     <title>IMKDesign</title>
 
     <!-- Bootstrap -->
-  <link href="<?php echo base_url('Assets/css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('Assets/css/bootstrap.min.css')?>" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo base_url('Assets/css/font-awesome.min.css')?>">
 	<link rel="stylesheet" href="<?php echo base_url('Assets/css/animate.css')?>">
 	<link href="<?php echo base_url('Assets/css/animate.min.css')?>" rel="stylesheet"> 
@@ -32,17 +32,17 @@
                         <span class="icon-bar"></span>
                     </button>
                    <div class="navbar-brand">
-						<a href="index.html"><h1>IMKDesign</h1></a>
+						<h1>IMKDesign/<?php echo $this->session->login?></h1>
 					</div>
                 </div>				
                 <div class="navbar-collapse collapse">							
 					<div class="menu">
 						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation"><a href="<?php echo site_url('Welcome/index');?>">Accueil</a></li>
-							<li role="presentation"><a href="<?php echo site_url('Welcome/service');?>">Services</a></li>
-							<li role="presentation"><a href="<?php echo site_url('Welcome/gallerie');?>">Realisations</a></li>
-              <li role="presentation"><a href="<?php echo site_url('Welcome/apropos');?>">Apropos</a></li>
-							<li role="presentation"><a href="<?php echo site_url('Welcome/contact');?>">Contact</a></li>						
+							<li role="presentation"><a href="<?php echo site_url('Admin/admen');?>">Accueil</a></li>
+							<li role="presentation"><a href="<?php echo site_url('Admin/newpub');?>">Publication</a></li>
+							<li role="presentation"><a href="<?php echo site_url('Admin/real');?>">Realisations</a></li>
+            
+                            <li role="presentation"><a href="<?php echo site_url('Admin/deconnecter');?>">Se Deconnecter</a></li>						
 						</ul>
 					</div>
 				</div>		

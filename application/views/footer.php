@@ -39,7 +39,7 @@
 				<div class="text-center">
 					<h4>Partenaires</h4>
 					<div class="copyr">
-					<p><a target="_blank" href="http://cristalteam.com" title="www.cristalteam.com"><img class='ico' src="<?php echo base_url('Assets/img/cteam.png')?>"/>Cristalteam</a></p>
+					<p><a target="_blank" href="http://cristalteam.com" title="www.cristalteam.com"><img class='ico' src="<?php echo base_url('Assets/img/cteam.png')?>"/></a></p>
 				</div>
 					<!-- <ul class="sidebar-gallery">
 						<li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
@@ -56,13 +56,17 @@
 				<div class="">
 					<h4>Newsletter Registration</h4>
 					<p>Subscribe today to receive the latest Day news via email. You may unsubscribe from this service at any time</p>
+					<form method="POST" action="<?php echo site_url('Welcome/souscrire')?>">
 					<div class="btn-gamp">		
-						<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
+						<input type="text" name="name" class="form-control" id="exampleInputText3" placeholder="Name">
+					</div>
+					<div class="btn-gamp">		
+						<input type="msg" name="msg" class="form-control" id="exampleInputText3" placeholder="Messsage">
 					</div>
 					<div class="btn-gamp">
-						<a type="submit" class="btn btn-default">Subscribe</a>
+						<button type="submit" class="btn btn-default">Subscribe</button>
 					</div>
-				
+					</form>
 			</div>
 			
 		</div>	

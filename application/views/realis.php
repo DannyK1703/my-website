@@ -21,15 +21,14 @@
     <![endif]-->
   </head>
   <body>	
-  <?php include("navbar.php")?>
-  <div class="gallery">
+  <?php include("navAdmin.php")?>
+	<div class="gallery">
 		<div class="text-center">
 			<h2>Realisations</h2>
 			
 		</div>
 		<div class="container">	
 		<?php
-		$i=0;
 			foreach($data as $f){
 			echo '<div class="col-md-4">
 				<figure class="effect-marley">
@@ -37,21 +36,18 @@
 					<figcaption>
 						<h4>'.$f->titre.'</h4>
 						<p>'.$f->description.'</p>
-										
+						<a href="'. site_url('Admin/supprimer/'.$f->idImage).'">supprimer</a>				
 					</figcaption>			
 				</figure>
 			</div>';
-			$i++;
 			}
-			if($i==0){
-				echo'<div id="rien">
-						<p> Aucune Realisation</p>
-								
-				</div>';
-			}
+			
 
 		?>	
-	</div>
-		</div>
-	<?php include_once("footer.php")?>
+			
+			
+					
+						
+			
+			
 	

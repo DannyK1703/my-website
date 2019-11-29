@@ -93,7 +93,7 @@
 			<!-- our-team -->
 			<div class="team">
 				<div class="text-center wow fadeInDown">
-					<h2>Team of Day</h2>
+					<h2>TEAM OF IMKDesign</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
 				</div>
 
